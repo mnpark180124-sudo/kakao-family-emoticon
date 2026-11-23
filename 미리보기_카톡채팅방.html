@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>우당탕탕 우리 가족 - 카카오톡 이모티콘 미리보기</title>
+<style>
+  body { font-family: 'Malgun Gothic', sans-serif; background: #f0f2f5; margin: 0; padding: 24px; display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+  .phone { width: 380px; background: #b2c7d9; border-radius: 28px; box-shadow: 0 12px 30px rgba(0,0,0,0.18); overflow: hidden; display: flex; flex-direction: column; height: 720px; border: 6px solid #222; }
+  .phone.dark { background: #1e1e1e; color: #eee; }
+  .header { background: rgba(255,255,255,0.85); padding: 14px 18px; font-weight: bold; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
+  .phone.dark .header { background: #2c2c2c; color: #fff; }
+  .chat-area { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+  .msg { display: flex; flex-direction: column; align-items: flex-start; }
+  .msg.me { align-items: flex-end; }
+  .sender { font-size: 12px; color: #444; margin-bottom: 4px; font-weight: 600; }
+  .phone.dark .sender { color: #bbb; }
+  .bubble { background: #fff; padding: 8px 12px; border-radius: 14px; font-size: 13px; max-width: 230px; box-shadow: 0 1px 2px rgba(0,0,0,0.08); }
+  .msg.me .bubble { background: #fee500; color: #111; }
+  .emoticon-img { width: 160px; height: 160px; object-fit: contain; border-radius: 12px; cursor: pointer; transition: transform 0.15s; }
+  .emoticon-img:hover { transform: scale(1.06); }
+  .tray { background: #fff; padding: 10px; border-top: 1px solid #ddd; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-height: 170px; overflow-y: auto; }
+  .phone.dark .tray { background: #2a2a2a; border-color: #444; }
+  .tray img { width: 72px; height: 72px; object-fit: contain; border-radius: 8px; cursor: pointer; border: 1px solid #eee; background: #fff; }
+  .tray img:hover { border-color: #fee500; transform: scale(1.05); }
+  .gallery { max-width: 680px; background: #fff; border-radius: 20px; padding: 24px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 12px; text-align: center; background: #fafafa; }
+  .card img { width: 180px; height: 180px; object-fit: contain; background: #fff; border-radius: 10px; border: 1px solid #eee; }
+  .card h4 { margin: 8px 0 4px; font-size: 14px; color: #222; }
+  .btn { cursor: pointer; background: #fee500; border: none; padding: 6px 12px; border-radius: 8px; font-weight: bold; font-size: 12px; }
+</style>
+</head>
+<body>
+  <div class="phone" id="phone">
+    <div class="header">
+      <span>👨‍👩‍👧‍👩 우당탕탕 우리 가족 (4)</span>
+      <button class="btn" onclick="document.getElementById('phone').classList.toggle('dark')">다크모드 전환</button>
+    </div>
+    <div class="chat-area" id="chat">
+      <div class="msg">
+        <span class="sender">엄마 · 딸 · 이모 · 아빠</span>
+        <div class="bubble">이번 주말에 다 같이 어디 갈까?!</div>
+        <img class="emoticon-img" src="01_움직이는_이모티콘_360x360_GIF/01_넷이_여행가자_산바다해외_360.gif">
+      </div>
+      <div class="msg me">
+        <span class="sender">이모 (자칭 언니)</span>
+        <img class="emoticon-img" src="01_움직이는_이모티콘_360x360_GIF/06_이모_언니라고불러_응이모_360.gif">
+      </div>
+      <div class="msg">
+        <span class="sender">아빠</span>
+        <img class="emoticon-img" src="01_움직이는_이모티콘_360x360_GIF/07_진지충아빠_과학적으로불가능해_360.gif">
+      </div>
+    </div>
+    <div class="tray">
+      <img src="01_움직이는_이모티콘_360x360_GIF/01_넷이_여행가자_산바다해외_360.gif" onclick="sendEmo(this.src, '우리 가족')" title="1. 넷이 여행가자">
+      <img src="01_움직이는_이모티콘_360x360_GIF/02_이모와딸_음식쟁탈전_360.gif" onclick="sendEmo(this.src, '이모')" title="2. 나도 맛있는 거 줘">
+      <img src="01_움직이는_이모티콘_360x360_GIF/03_아빠_내옷은_사달라조르기_360.gif" onclick="sendEmo(this.src, '아빠')" title="3. 내 옷은...?">
+      <img src="01_움직이는_이모티콘_360x360_GIF/04_불꽃엄마_누가그랬어_딸메롱_360.gif" onclick="sendEmo(this.src, '엄마 & 딸')" title="4. 누가 그랬어?!">
+      <img src="01_움직이는_이모티콘_360x360_GIF/05_딸_예의바른척_는뻥이지롱_360.gif" onclick="sendEmo(this.src, '9살 딸')" title="5. 네~ 는 뻥이지롱">
+      <img src="01_움직이는_이모티콘_360x360_GIF/06_이모_언니라고불러_응이모_360.gif" onclick="sendEmo(this.src, '이모 & 딸')" title="6. 언니라고 불러!">
+      <img src="01_움직이는_이모티콘_360x360_GIF/07_진지충아빠_과학적으로불가능해_360.gif" onclick="sendEmo(this.src, '아빠')" title="7. 과학적으로 불가능해">
+      <img src="01_움직이는_이모티콘_360x360_GIF/08_이모약올리다_머리채응징_360.gif" onclick="sendEmo(this.src, '엄마·딸·이모')" title="8. 약올리다 머리채">
+    </div>
+  </div>
+
+  <div class="gallery">
+    <h2 style="margin-top:0;">✨ 제작 완료 이모티콘 8종 (360×360 GIF)</h2>
+    <p style="font-size:13px; color:#555;">왼쪽 카톡방 하단 트레이에서 이모티콘을 클릭하면 대화방에 전송해 볼 수 있습니다.</p>
+    <div class="grid">
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/01_넷이_여행가자_산바다해외_360.gif"><h4>01. 넷이 여행가자 (산? 바다? 해외?!)</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/02_이모와딸_음식쟁탈전_360.gif"><h4>02. 이모와 딸 음식 쟁탈전</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/03_아빠_내옷은_사달라조르기_360.gif"><h4>03. 아빠의 내 옷은...?</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/04_불꽃엄마_누가그랬어_딸메롱_360.gif"><h4>04. 불꽃 엄마 vs 딸 메롱</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/05_딸_예의바른척_는뻥이지롱_360.gif"><h4>05. 딸 예의 바른 척 → 는 뻥이지롱</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/06_이모_언니라고불러_응이모_360.gif"><h4>06. 언니라고 불러~! vs 응~ 이모~</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/07_진지충아빠_과학적으로불가능해_360.gif"><h4>07. 진지충 아빠 과학적 급발진</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/08_이모약올리다_머리채응징_360.gif"><h4>08. 약 올리다 머리채 잡힌 이모</h4></div>
+    </div>
+  </div>
+
+<script>
+function sendEmo(src, who) {
+  const chat = document.getElementById('chat');
+  const d = document.createElement('div');
+  d.className = 'msg me';
+  d.innerHTML = `<span class="sender">${who}</span><img class="emoticon-img" src="${src}">`;
+  chat.appendChild(d);
+  chat.scrollTop = chat.scrollHeight;
+}
+</script>
+</body>
+</html>
