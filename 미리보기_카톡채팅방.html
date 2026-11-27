@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>우당탕탕 우리 가족 - 카카오톡 이모티콘 미리보기</title>
+<title>우당탕탕 우리 가족 - 카카오톡 이모티콘 24종 미리보기</title>
 <style>
   body { font-family: 'Malgun Gothic', sans-serif; background: #f0f2f5; margin: 0; padding: 24px; display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
-  .phone { width: 380px; background: #b2c7d9; border-radius: 28px; box-shadow: 0 12px 30px rgba(0,0,0,0.18); overflow: hidden; display: flex; flex-direction: column; height: 720px; border: 6px solid #222; }
+  .phone { width: 380px; background: #b2c7d9; border-radius: 28px; box-shadow: 0 12px 30px rgba(0,0,0,0.18); overflow: hidden; display: flex; flex-direction: column; height: 740px; border: 6px solid #222; position: sticky; top: 24px; }
   .phone.dark { background: #1e1e1e; color: #eee; }
   .header { background: rgba(255,255,255,0.85); padding: 14px 18px; font-weight: bold; font-size: 15px; display: flex; justify-content: space-between; align-items: center; }
   .phone.dark .header { background: #2c2c2c; color: #fff; }
@@ -14,101 +14,85 @@
   .msg.me { align-items: flex-end; }
   .sender { font-size: 12px; color: #444; margin-bottom: 4px; font-weight: 600; }
   .phone.dark .sender { color: #bbb; }
-  .bubble { background: #fff; padding: 8px 12px; border-radius: 14px; font-size: 13px; max-width: 230px; box-shadow: 0 1px 2px rgba(0,0,0,0.08); }
-  .msg.me .bubble { background: #fee500; color: #111; }
-  .emoticon-img { width: 160px; height: 160px; object-fit: contain; border-radius: 12px; cursor: pointer; transition: transform 0.15s; }
-  .emoticon-img:hover { transform: scale(1.06); }
-  .tray { background: #fff; padding: 10px; border-top: 1px solid #ddd; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-height: 170px; overflow-y: auto; }
+  .emoticon-img { width: 156px; height: 156px; object-fit: contain; border-radius: 12px; background: #fff; }
+  .tray { background: #fff; padding: 10px; border-top: 1px solid #ddd; display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-height: 210px; overflow-y: auto; }
   .phone.dark .tray { background: #2a2a2a; border-color: #444; }
   .tray img { width: 72px; height: 72px; object-fit: contain; border-radius: 8px; cursor: pointer; border: 1px solid #eee; background: #fff; }
   .tray img:hover { border-color: #fee500; transform: scale(1.05); }
-  .gallery { max-width: 680px; background: #fff; border-radius: 20px; padding: 24px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
-  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 12px; text-align: center; background: #fafafa; }
-  .card img { width: 180px; height: 180px; object-fit: contain; background: #fff; border-radius: 10px; border: 1px solid #eee; }
-  .card h4 { margin: 8px 0 4px; font-size: 14px; color: #222; }
+  .gallery { max-width: 720px; background: #fff; border-radius: 20px; padding: 24px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .card { border: 1px solid #e5e7eb; border-radius: 14px; padding: 10px; text-align: center; background: #fafafa; }
+  .card img { width: 160px; height: 160px; object-fit: contain; background: #fff; border-radius: 10px; border: 1px solid #eee; }
+  .card h4 { margin: 8px 0 4px; font-size: 13px; color: #222; }
   .btn { cursor: pointer; background: #fee500; border: none; padding: 6px 12px; border-radius: 8px; font-weight: bold; font-size: 12px; }
 </style>
 </head>
 <body>
   <div class="phone" id="phone">
     <div class="header">
-      <span>👨‍👩‍👧‍👩 우당탕탕 우리 가족 (4)</span>
+      <span>👨‍👩‍👧‍👩 우당탕탕 우리 가족 (24종)</span>
       <button class="btn" onclick="document.getElementById('phone').classList.toggle('dark')">다크모드 전환</button>
     </div>
     <div class="chat-area" id="chat">
-      <div class="msg">
-        <span class="sender">엄마</span>
-        <div class="bubble">밥 먹어!! 얼른 나와!!</div>
-        <img class="emoticon-img" src="01_움직이는_이모티콘_360x360_GIF/v3_04_엄마_츤데레_국자휙휙_360.gif">
-      </div>
-      <div class="msg me">
-        <span class="sender">9살 딸</span>
-        <img class="emoticon-img" src="01_움직이는_이모티콘_360x360_GIF/v3_01_딸_폰보며_ㅋ썩소_360.gif">
-      </div>
-      <div class="msg">
-        <span class="sender">아빠</span>
-        <img class="emoticon-img" src="01_움직이는_이모티콘_360x360_GIF/v3_07_아빠_진지충_안경번쩍_360.gif">
-      </div>
+      <div class="msg"><span class="sender">딸</span><img class="emoticon-img" src="01_움직이는_이모티콘_360x360_GIF/v3_01_딸_폰보며_ㅋ썩소_360.gif"></div>
+      <div class="msg me"><span class="sender">엄마</span><img class="emoticon-img" src="01_움직이는_이모티콘_360x360_GIF/v3_02_엄마_무텍스트_불꽃극대노_360.gif"></div>
     </div>
     <div class="tray">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_01_딸_폰보며_ㅋ썩소_360.gif" onclick="sendEmo(this.src, '9살 딸')" title="v3-01. 딸 폰 보며 ㅋ 썩소">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_02_엄마_무텍스트_불꽃극대노_360.gif" onclick="sendEmo(this.src, '엄마')" title="v3-02. 엄마 무텍스트 불꽃 극대노">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_03_딸_뿌앵_폭포수오열_360.gif" onclick="sendEmo(this.src, '9살 딸')" title="v3-03. 딸 뿌앵 폭포수 오열">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_04_엄마_츤데레_국자휙휙_360.gif" onclick="sendEmo(this.src, '엄마')" title="v3-04. 엄마 츤데레 국자 휙휙">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_05_딸_물음표_멍때림_360.gif" onclick="sendEmo(this.src, '9살 딸')" title="v3-05. 딸 ? 영혼 없는 멍때림">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_06_엄마_다정_하트뿜뿜_360.gif" onclick="sendEmo(this.src, '엄마')" title="v3-06. 엄마 다정 하트 뿜뿜">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_07_아빠_진지충_안경번쩍_360.gif" onclick="sendEmo(this.src, '아빠')" title="v3-07. 아빠 안경 번쩍 진지충">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_08_딸_신남_어깨춤_360.gif" onclick="sendEmo(this.src, '9살 딸')" title="v3-08. 딸 신남 어깨춤">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_09_이모_서운하다난_360.gif" onclick="sendEmo(this.src, '이모')" title="v3-09. 이모 서운함 (서운하다..난..)">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_10_딸_선글라스_안들려_360.gif" onclick="sendEmo(this.src, '9살 딸')" title="v3-10. 딸 선글라스 귀막기 무시">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_11_딸_피곤_영혼탈출_360.gif" onclick="sendEmo(this.src, '9살 딸')" title="v3-11. 딸 피곤.. 영혼 탈출">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_12_엄마_참을인_심호흡_360.gif" onclick="sendEmo(this.src, '엄마')" title="v3-12. 엄마 참을 인 심호흡">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_13_엄마_따봉_최고칭찬_360.gif" onclick="sendEmo(this.src, '엄마')" title="v3-13. 엄마 따봉 최고 칭찬">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_14_엄마_실망_낙엽_360.gif" onclick="sendEmo(this.src, '엄마')" title="v3-14. 엄마 실망 낙엽">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_15_아빠_멀리서뛰어오기_응뭐라고오_360.gif" onclick="sendEmo(this.src, '아빠')" title="v3-15. 아빠 멀리서 뛰어오기 응?? 뭐라고오..~~~!!!???">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_16_아빠_무표정_미안미안_쏘리쏘리_360.gif" onclick="sendEmo(this.src, '아빠')" title="v3-16. 아빠 무표정 미안미안 / 쏘리쏘리">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_17_딸_예의바른척_천사미소_360.gif" onclick="sendEmo(this.src, '9살 딸')" title="v3-17. 딸 예의 바른 척 천사 미소">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_18_딸_행복그잡채_하트_360.gif" onclick="sendEmo(this.src, '9살 딸')" title="v3-18. 딸 행복 그 잡채">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_19_딸_약올림_메롱브이_360.gif" onclick="sendEmo(this.src, '9살 딸')" title="v3-19. 딸 약 올림 메롱 브이">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_20_엄마_와_감탄놀람_360.gif" onclick="sendEmo(this.src, '엄마')" title="v3-20. 엄마 와.. 감탄 찐 놀람">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_21_엄마_진짜싫다_정색_360.gif" onclick="sendEmo(this.src, '엄마')" title="v3-21. 엄마 진짜 싫다 리얼 정색">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_22_주식떡상떡락_4컷_360.gif" onclick="sendEmo(this.src, '우리 가족')" title="v3-22. 엄마→이모→아빠 주식 떡상→떡락 4컷">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_이모_단전_야아_연쇄외침_360.gif" onclick="sendEmo(this.src, '이모')" title="v3-이모1. 이모 단전 야아 연쇄외침">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_이모2_부러움_나도똑같이해줘_360.gif" onclick="sendEmo(this.src, '이모')" title="v3-이모2. 나도 똑같이 해줘~!! ♥">
-      <img src="01_움직이는_이모티콘_360x360_GIF/v3_이모3_삐짐_흥_360.gif" onclick="sendEmo(this.src, '이모')" title="v3-이모3. 삐짐 흥!">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_01_딸_폰보며_ㅋ썩소_360.gif" onclick="sendEmo(this.src, '딸')" title="01. 딸 폰보며 ㅋ썩소">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_02_엄마_무텍스트_불꽃극대노_360.gif" onclick="sendEmo(this.src, '엄마')" title="02. 엄마 무텍스트 불꽃극대노">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_03_딸_뿌앵_폭포수오열_360.gif" onclick="sendEmo(this.src, '딸')" title="03. 딸 뿌앵 폭포수오열">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_04_엄마_츤데레_국자휙휙_360.gif" onclick="sendEmo(this.src, '엄마')" title="04. 엄마 츤데레 국자휙휙">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_05_딸_물음표_멍때림_360.gif" onclick="sendEmo(this.src, '딸')" title="05. 딸 물음표 멍때림">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_06_엄마_다정_하트뿜뿜_360.gif" onclick="sendEmo(this.src, '엄마')" title="06. 엄마 다정 하트뿜뿜">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_07_아빠_진지충_안경번쩍_360.gif" onclick="sendEmo(this.src, '아빠')" title="07. 아빠 진지충 안경번쩍">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_08_딸_신남_어깨춤_360.gif" onclick="sendEmo(this.src, '딸')" title="08. 딸 신남 어깨춤">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_09_이모_서운하다난_360.gif" onclick="sendEmo(this.src, '이모')" title="09. 이모 서운하다난">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_10_딸_선글라스_안들려_360.gif" onclick="sendEmo(this.src, '딸')" title="10. 딸 선글라스 안들려">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_11_딸_피곤_영혼탈출_360.gif" onclick="sendEmo(this.src, '딸')" title="11. 딸 피곤 영혼탈출">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_12_엄마_참을인_심호흡_360.gif" onclick="sendEmo(this.src, '엄마')" title="12. 엄마 참을인 심호흡">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_13_엄마_따봉_최고칭찬_360.gif" onclick="sendEmo(this.src, '엄마')" title="13. 엄마 따봉 최고칭찬">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_14_엄마_실망_낙엽_360.gif" onclick="sendEmo(this.src, '엄마')" title="14. 엄마 실망 낙엽">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_15_아빠_멀리서뛰어오기_응뭐라고오_360.gif" onclick="sendEmo(this.src, '아빠')" title="15. 아빠 멀리서뛰어오기 응뭐라고오">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_16_아빠_무표정_미안미안_쏘리쏘리_360.gif" onclick="sendEmo(this.src, '아빠')" title="16. 아빠 무표정 미안미안 쏘리쏘리">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_17_딸_예의바른척_천사미소_360.gif" onclick="sendEmo(this.src, '딸')" title="17. 딸 예의바른척 천사미소">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_18_딸_행복그잡채_하트_360.gif" onclick="sendEmo(this.src, '딸')" title="18. 딸 행복그잡채 하트">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_19_딸_약올림_메롱브이_360.gif" onclick="sendEmo(this.src, '딸')" title="19. 딸 약올림 메롱브이">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_20_엄마_와_감탄놀람_360.gif" onclick="sendEmo(this.src, '엄마')" title="20. 엄마 와 감탄놀람">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_21_엄마_진짜싫다_정색_360.gif" onclick="sendEmo(this.src, '엄마')" title="21. 엄마 진짜싫다 정색">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_22_주식떡상떡락_4컷_360.gif" onclick="sendEmo(this.src, '주식떡상떡락')" title="22. 주식떡상떡락 4컷">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_23_이모_단전_야아_연쇄외침_360.gif" onclick="sendEmo(this.src, '이모')" title="23. 이모 단전 야아 연쇄외침">
+      <img src="01_움직이는_이모티콘_360x360_GIF/v3_24_이모_투정_나도똑같이해줘어엉_360.gif" onclick="sendEmo(this.src, '이모')" title="24. 이모 투정 나도똑같이해줘어엉">
     </div>
   </div>
 
   <div class="gallery">
-    <h2 style="margin-top:0;">✨ 제작 완료 v3 이모티콘 25종 (360×360 GIF)</h2>
+    <h2 style="margin-top:0;">✨ 최종 B급 손그림 이모티콘 24종 (01~24 순서)</h2>
     <p style="font-size:13px; color:#555;">왼쪽 카톡방 하단 트레이에서 이모티콘을 클릭하면 대화방에 전송해 볼 수 있습니다.</p>
     <div class="grid">
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_01_딸_폰보며_ㅋ썩소_360.gif"><h4>v3-01. 딸 폰 보며 ㅋ 썩소</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_02_엄마_무텍스트_불꽃극대노_360.gif"><h4>v3-02. 엄마 무텍스트 불꽃 극대노</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_03_딸_뿌앵_폭포수오열_360.gif"><h4>v3-03. 딸 뿌앵 폭포수 오열</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_04_엄마_츤데레_국자휙휙_360.gif"><h4>v3-04. 엄마 츤데레 국자 휙휙</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_05_딸_물음표_멍때림_360.gif"><h4>v3-05. 딸 ? 영혼 없는 멍때림</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_06_엄마_다정_하트뿜뿜_360.gif"><h4>v3-06. 엄마 다정 하트 뿜뿜</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_07_아빠_진지충_안경번쩍_360.gif"><h4>v3-07. 아빠 안경 번쩍 진지충</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_08_딸_신남_어깨춤_360.gif"><h4>v3-08. 딸 신남 어깨춤</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_09_이모_서운하다난_360.gif"><h4>v3-09. 이모 서운함 (서운하다..난..)</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_10_딸_선글라스_안들려_360.gif"><h4>v3-10. 딸 선글라스 귀막기 무시</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_11_딸_피곤_영혼탈출_360.gif"><h4>v3-11. 딸 피곤.. 영혼 탈출</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_12_엄마_참을인_심호흡_360.gif"><h4>v3-12. 엄마 참을 인 심호흡</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_13_엄마_따봉_최고칭찬_360.gif"><h4>v3-13. 엄마 따봉 최고 칭찬</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_14_엄마_실망_낙엽_360.gif"><h4>v3-14. 엄마 실망 낙엽</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_15_아빠_멀리서뛰어오기_응뭐라고오_360.gif"><h4>v3-15. 아빠 멀리서 뛰어오기</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_16_아빠_무표정_미안미안_쏘리쏘리_360.gif"><h4>v3-16. 아빠 무표정 미안미안 / 쏘리쏘리</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_17_딸_예의바른척_천사미소_360.gif"><h4>v3-17. 딸 예의 바른 척 천사 미소</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_18_딸_행복그잡채_하트_360.gif"><h4>v3-18. 딸 행복 그 잡채</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_19_딸_약올림_메롱브이_360.gif"><h4>v3-19. 딸 약 올림 메롱 브이</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_20_엄마_와_감탄놀람_360.gif"><h4>v3-20. 엄마 와.. 감탄 찐 놀람</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_21_엄마_진짜싫다_정색_360.gif"><h4>v3-21. 엄마 진짜 싫다 리얼 정색</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_22_주식떡상떡락_4컷_360.gif"><h4>v3-22. 엄마→이모→아빠 주식 떡상→떡락 4컷</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_이모_단전_야아_연쇄외침_360.gif"><h4>v3-이모1. 이모 단전 "야아~~~" 연쇄외침</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_이모2_부러움_나도똑같이해줘_360.gif"><h4>v3-이모2. 나도 똑같이 해줘~!! ♥</h4></div>
-      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_이모3_삐짐_흥_360.gif"><h4>v3-이모3. 이모 삐짐 "흥!"</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_01_딸_폰보며_ㅋ썩소_360.gif"><h4>01. 딸 — 폰보며 ㅋ썩소</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_02_엄마_무텍스트_불꽃극대노_360.gif"><h4>02. 엄마 — 무텍스트 불꽃극대노</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_03_딸_뿌앵_폭포수오열_360.gif"><h4>03. 딸 — 뿌앵 폭포수오열</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_04_엄마_츤데레_국자휙휙_360.gif"><h4>04. 엄마 — 츤데레 국자휙휙</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_05_딸_물음표_멍때림_360.gif"><h4>05. 딸 — 물음표 멍때림</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_06_엄마_다정_하트뿜뿜_360.gif"><h4>06. 엄마 — 다정 하트뿜뿜</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_07_아빠_진지충_안경번쩍_360.gif"><h4>07. 아빠 — 진지충 안경번쩍</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_08_딸_신남_어깨춤_360.gif"><h4>08. 딸 — 신남 어깨춤</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_09_이모_서운하다난_360.gif"><h4>09. 이모 — 서운하다난</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_10_딸_선글라스_안들려_360.gif"><h4>10. 딸 — 선글라스 안들려</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_11_딸_피곤_영혼탈출_360.gif"><h4>11. 딸 — 피곤 영혼탈출</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_12_엄마_참을인_심호흡_360.gif"><h4>12. 엄마 — 참을인 심호흡</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_13_엄마_따봉_최고칭찬_360.gif"><h4>13. 엄마 — 따봉 최고칭찬</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_14_엄마_실망_낙엽_360.gif"><h4>14. 엄마 — 실망 낙엽</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_15_아빠_멀리서뛰어오기_응뭐라고오_360.gif"><h4>15. 아빠 — 멀리서뛰어오기 응뭐라고오</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_16_아빠_무표정_미안미안_쏘리쏘리_360.gif"><h4>16. 아빠 — 무표정 미안미안 쏘리쏘리</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_17_딸_예의바른척_천사미소_360.gif"><h4>17. 딸 — 예의바른척 천사미소</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_18_딸_행복그잡채_하트_360.gif"><h4>18. 딸 — 행복그잡채 하트</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_19_딸_약올림_메롱브이_360.gif"><h4>19. 딸 — 약올림 메롱브이</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_20_엄마_와_감탄놀람_360.gif"><h4>20. 엄마 — 와 감탄놀람</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_21_엄마_진짜싫다_정색_360.gif"><h4>21. 엄마 — 진짜싫다 정색</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_22_주식떡상떡락_4컷_360.gif"><h4>22. 주식떡상떡락 — 4컷</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_23_이모_단전_야아_연쇄외침_360.gif"><h4>23. 이모 — 단전 야아 연쇄외침</h4></div>
+      <div class="card"><img src="01_움직이는_이모티콘_360x360_GIF/v3_24_이모_투정_나도똑같이해줘어엉_360.gif"><h4>24. 이모 — 투정 나도똑같이해줘어엉</h4></div>
     </div>
   </div>
 
